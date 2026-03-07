@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="projets_page_title">Tous mes Projets - Fofack Alemdjou Henri Joel</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body style="background-color: var(--background-light);">
+    <header class="navbar" style="background-color: var(--background-dark); padding: 5px 0;">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Logo FAHJ" style="height: 40px; width: auto;"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="profil.html" data-i18n="nav_about">À propos</a></li>
+                    <li><a href="index.html#projects" data-i18n="nav_projects">Projets</a></li>
+                    <li><a href="index.html#contact" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons" style="display:flex; align-items:center;">
+                <div class="lang-dropdown">
+                    <button class="lang-btn" id="current-lang"><img src="https://flagcdn.com/w20/fr.png" alt="FR"
+                            width="20" style="margin-right:5px;"> FR ▼</button>
+                    <div class="lang-content">
+                        <button onclick="changeLang('fr')"><img src="https://flagcdn.com/w20/fr.png" alt="FR" width="20"
+                                style="margin-right:10px;"> Français</button>
+                        <button onclick="changeLang('en')"><img src="https://flagcdn.com/w20/gb.png" alt="EN" width="20"
+                                style="margin-right:10px;"> English</button>
+                        <button onclick="changeLang('de')"><img src="https://flagcdn.com/w20/de.png" alt="DE" width="20"
+                                style="margin-right:10px;"> Deutsch</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="all-projects" class="features-section" style="padding-top: 100px;">
+        <div class="container">
+            <h2 class="section-title" data-i18n="all_projects_title">Tous mes Projets Détaillés</h2>
+            <div class="feature-grid">
+
+                <div class="feature-item animate-on-scroll" data-delay="0">
+                    <img src="images/xccm2.png" alt="XCCM2" class="feature-img">
+                    <h3>XCCM2 - eXtended Content Composition Module</h3>
+                    <p data-i18n="proj_xccm2" style="text-align: justify; font-size: 0.9em;">Dans le cadre de ce projet,
+                        nous avons conçu et développé XCCM2 eXtended Content Composition Module, une application visant
+                        à faciliter la création, l'organisation et la recomposition de contenus pédagogiques à partir de
+                        fragments pré-segmentés appelés granules. Cette approche modulaire permet d’améliorer la
+                        réutilisabilité des contenus, de favoriser le travail collaboratif et d’optimiser le processus
+                        de production des ressources pédagogiques numériques.</p>
+                    <div style="margin-top: 15px; display: flex; gap: 10px; justify-content: center;">
+                        <a href="https://xccm-2.vercel.app" target="_blank"
+                            style="color: var(--primary-color); font-weight: bold; text-decoration: none;"><i
+                                class="fas fa-external-link-alt"></i> Démo</a>
+                        <a href="https://github.com/Zenbx/XCCM_2" target="_blank"
+                            style="color: var(--text-dark); font-weight: bold; text-decoration: none;"><i
+                                class="fab fa-github"></i> Front</a>
+                        <a href="https://github.com/Git-Tomson/XCCM2-API" target="_blank"
+                            style="color: var(--text-dark); font-weight: bold; text-decoration: none;"><i
+                                class="fab fa-github"></i> Back</a>
+                    </div>
+                </div>
+
+                <div class="feature-item animate-on-scroll" data-delay="100">
+                    <div class="project-images-combined">
+                        <img src="images/waterpaid.jpg" alt="Waterpaid App">
+                        <img src="images/cartepcb.jpg" alt="Waterpaid PCB">
+                    </div>
+                    <h3>Waterpaid - Compteur d'Eau Prépayé</h3>
+                    <p data-i18n="proj_waterpaid" style="text-align: justify; font-size: 0.9em;">Compteur d’eau prépayé
+                        intelligent basé sur la technologie LoRaWAN. Ce système intègre une application mobile
+                        permettant aux utilisateurs de gérer leur crédit de manière autonome et aux administrateurs de
+                        superviser l’ensemble des compteurs déployés. Le prototype vise à démontrer la faisabilité
+                        technique et économique d’une telle solution dans le contexte camerounais.</p>
+                </div>
+
+                <div class="feature-item animate-on-scroll" data-delay="200">
+                    <img src="images/yowyob.png" alt="Yowyob" class="feature-img">
+                    <h3>Yowyob Feedback</h3>
+                    <p data-i18n="proj_yowyob" style="text-align: justify; font-size: 0.9em;">Plateforme de prise en
+                        compte des avis et impressions des stagiaires d’une entreprise (basé sur un prototype existant).
+                    </p>
+                    <div style="margin-top: 15px; display: flex; gap: 10px; justify-content: center;">
+                        <a href="https://yowyob-feedback-frontend.vercel.app" target="_blank"
+                            style="color: var(--primary-color); font-weight: bold; text-decoration: none;"><i
+                                class="fas fa-external-link-alt"></i> Démo</a>
+                        <a href="https://github.com/ALEMDJOU/yowyob_feedback_frontend" target="_blank"
+                            style="color: var(--text-dark); font-weight: bold; text-decoration: none;"><i
+                                class="fab fa-github"></i> Front</a>
+                        <a href="https://github.com/Git-Tomson/YowYobFeedback_Backend" target="_blank"
+                            style="color: var(--text-dark); font-weight: bold; text-decoration: none;"><i
+                                class="fab fa-github"></i> Back</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="text-align: center;">
+                <a href="index.html" class="btn btn-secondary back-btn" data-i18n="btn_back">Retour à l'accueil</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 20px;">
+                <a href="index.html"><img src="images/logo.png" alt="Logo FAHJ" style="height: 100px; width: auto;"></a>
+            </div>
+            <div class="footer-bottom" style="text-align:center;">
+                <p>&copy; 2026 Fofack Alemdjou Henri Joel. <span data-i18n="footer_rights">Tous droits réservés.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/translations.js"></script>
+</body>
+
+</html>

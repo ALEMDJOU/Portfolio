@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page_title">Portfolio - Fofack Alemdjou Henri Joel</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <header class="navbar" style="background-color: var(--background-dark); padding: 5px 0;">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Logo FAHJ" style="height: 40px; width: auto;"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="profil.html" data-i18n="nav_about">À propos</a></li>
+                    <li><a href="#projects" data-i18n="nav_projects">Projets</a></li>
+                    <li><a href="#experience" data-i18n="nav_experience">Expériences</a></li>
+                    <li><a href="#development" data-i18n="nav_research">Recherches</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons" style="display:flex; align-items:center;">
+                <div class="lang-dropdown">
+                    <button class="lang-btn" id="current-lang"><img src="https://flagcdn.com/w20/fr.png" alt="FR"
+                            width="20" style="margin-right:5px;"> FR ▼</button>
+                    <div class="lang-content">
+                        <button onclick="changeLang('fr')"><img src="https://flagcdn.com/w20/fr.png" alt="FR" width="20"
+                                style="margin-right:10px;"> Français</button>
+                        <button onclick="changeLang('en')"><img src="https://flagcdn.com/w20/gb.png" alt="EN" width="20"
+                                style="margin-right:10px;"> English</button>
+                        <button onclick="changeLang('de')"><img src="https://flagcdn.com/w20/de.png" alt="DE" width="20"
+                                style="margin-right:10px;"> Deutsch</button>
+                    </div>
+                </div>
+                <a href="Fofack_Henri_CV.pdf" target="_blank" class="btn btn-primary" data-i18n="btn_cv"
+                    style="margin-left: 20px; padding: 6px 15px; font-size: 0.9em;">Télécharger CV</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="hero-section">
+        <div class="container">
+            <div class="hero-content fade-in-up" style="text-align: center; width: 100%; margin-top: 15vh;">
+                <h1 class="text-reveal"
+                    style="opacity: 1 !important; visibility: visible !important; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); font-size: 4em;">
+                    FOFACK ALEMDJOU HENRI JOEL</h1>
+                <h2 class="fade-in-up delay-1 sparkle-text" data-i18n="hero_desc"
+                    style="font-size: 2.2em; font-weight: 700; margin-bottom: 20px;">
+                    Ingénieur et Développeur passionné par l'innovation technique.</h2>
+                <p class="fade-in-up delay-2 sparkle-text" data-i18n="hero_sub"
+                    style="font-size: 1.5em; font-weight: 600;">
+                    Découvrez mes projets et parcours professionnel.</p>
+            </div>
+        </div>
+        <div class="particles" id="particles"></div>
+    </section>
+
+    <section id="projects" class="features-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="projects_title">Mes Projets</h2>
+            <div class="feature-grid">
+
+                <div class="feature-item animate-on-scroll" data-delay="0">
+                    <img src="images/xccm2.png" alt="XCCM2" class="feature-img">
+                    <h3>XCCM2</h3>
+                    <p data-i18n="proj_xccm2" style="text-align: justify; font-size: 0.9em;">Dans le cadre de ce projet,
+                        nous avons conçu et développé XCCM2 eXtended Content Composition Module, une application visant
+                        à faciliter la création, l'organisation et la recomposition de contenus pédagogiques à partir de
+                        fragments pré-segmentés appelés granules. Cette approche modulaire permet d’améliorer la
+                        réutilisabilité des contenus, de favoriser le travail collaboratif et d’optimiser le processus
+                        de production des ressources pédagogiques numériques.</p>
+                    <div style="margin-top: 15px; display: flex; gap: 10px; justify-content: center;">
+                        <a href="https://xccm-2.vercel.app" target="_blank"
+                            style="color: var(--primary-color); font-weight: bold; text-decoration: none;"><i
+                                class="fas fa-external-link-alt"></i> Démo</a>
+                        <a href="https://github.com/Zenbx/XCCM_2" target="_blank"
+                            style="color: var(--text-dark); font-weight: bold; text-decoration: none;"><i
+                                class="fab fa-github"></i> Front</a>
+                        <a href="https://github.com/Git-Tomson/XCCM2-API" target="_blank"
+                            style="color: var(--text-dark); font-weight: bold; text-decoration: none;"><i
+                                class="fab fa-github"></i> Back</a>
+                    </div>
+                </div>
+
+                <div class="feature-item animate-on-scroll" data-delay="100">
+                    <div class="project-images-combined">
+                        <img src="images/waterpaid.jpg" alt="Waterpaid App">
+                        <img src="images/cartepcb.jpg" alt="Waterpaid PCB">
+                    </div>
+                    <h3>Waterpaid</h3>
+                    <p data-i18n="proj_waterpaid" style="text-align: justify; font-size: 0.9em;">Compteur d’eau prépayé
+                        intelligent basé sur la technologie LoRaWAN. Ce système intègre une application mobile
+                        permettant aux utilisateurs de gérer leur crédit de manière autonome et aux administrateurs de
+                        superviser l’ensemble des compteurs déployés. Le prototype vise à démontrer la faisabilité
+                        technique et économique d’une telle solution dans le contexte camerounais.</p>
+                </div>
+
+                <div class="feature-item animate-on-scroll" data-delay="200">
+                    <img src="images/yowyob.png" alt="Yowyob" class="feature-img">
+                    <h3>Yowyob Feedback</h3>
+                    <p data-i18n="proj_yowyob" style="text-align: justify; font-size: 0.9em;">Plateforme de prise en
+                        compte des avis et impressions des stagiaires d’une entreprise (basé sur un prototype existant).
+                    </p>
+                    <div style="margin-top: 15px; display: flex; gap: 10px; justify-content: center;">
+                        <a href="https://yowyob-feedback-frontend.vercel.app" target="_blank"
+                            style="color: var(--primary-color); font-weight: bold; text-decoration: none;"><i
+                                class="fas fa-external-link-alt"></i> Démo</a>
+                        <a href="https://github.com/ALEMDJOU/yowyob_feedback_frontend" target="_blank"
+                            style="color: var(--text-dark); font-weight: bold; text-decoration: none;"><i
+                                class="fab fa-github"></i> Front</a>
+                        <a href="https://github.com/Git-Tomson/YowYobFeedback_Backend" target="_blank"
+                            style="color: var(--text-dark); font-weight: bold; text-decoration: none;"><i
+                                class="fab fa-github"></i> Back</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="projets.html" class="btn btn-secondary" data-i18n="btn_see_all">Voir tous les projets</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-title-alt" data-i18n="exp_title">Expérience Professionnelle</h2>
+            <div class="experience-list">
+                <!-- Chaning FP -->
+                <div class="experience-card animate-on-scroll" data-delay="0">
+                    <img src="images/chaning.jpg" alt="Chaning Logo" class="exp-logo">
+                    <div class="exp-details">
+                        <span class="exp-date" data-i18n="exp_chaning_date">Juillet - Août 2025</span>
+                        <h3 data-i18n="exp_chaning">Stagiaire Data Science</h3>
+                        <div class="exp-org" data-i18n="exp_chaning_org">Chaning FP, Yaoundé</div>
+                        <p class="exp-desc" data-i18n="exp_chaning_desc">Analyse de la répartition des salaires d’une
+                            entreprise par des méthodes de Machine Learning...</p>
+                    </div>
+                </div>
+
+                <!-- Intelligentsia -->
+                <div class="experience-card animate-on-scroll" data-delay="100">
+                    <img src="images/inteligentsia.png" alt="Intelligentsia Logo" class="exp-logo">
+                    <div class="exp-details">
+                        <span class="exp-date" data-i18n="exp_intelligentsia_date">2023 - 2024</span>
+                        <h3 data-i18n="exp_intelligentsia">Professeur de Mathématiques & Physique</h3>
+                        <div class="exp-org" data-i18n="exp_intelligentsia_org">Intelligentsia Corporation, Cameroun
+                        </div>
+                        <p class="exp-desc" data-i18n="exp_intelligentsia_desc">Préparation intensive aux concours des
+                            écoles d'ingénierie et de médecine au Cameroun.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="development" class="dev-section">
+        <div class="container">
+            <h2 class="section-title-alt" data-i18n="dev_title">Sujets en cours de recherche</h2>
+            <div class="feature-grid">
+                <!-- Deep Learning e-->
+                <div class="dev-item animate-on-scroll" data-delay="0">
+                    <div class="dev-badge">AI / Research</div>
+                    <div class="dev-img-container">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800"
+                            alt="Deep Learning">
+                    </div>
+                    <div class="dev-content">
+                        <h3 data-i18n="dev_deep_learning">Deep Learning</h3>
+                        <p data-i18n="dev_deep_learning_desc">Exploration des architectures de réseaux de neurones
+                            profonds pour la résolution de problèmes complexes.</p>
+                    </div>
+                </div>
+
+                <!-- Computer Vision -->
+                <div class="dev-item animate-on-scroll" data-delay="100">
+                    <div class="dev-badge">Vision</div>
+                    <div class="dev-img-container">
+                        <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=800"
+                            alt="Computer Vision">
+                    </div>
+                    <div class="dev-content">
+                        <h3 data-i18n="dev_computer_vision">Vision par Ordinateur</h3>
+                        <p data-i18n="dev_computer_vision_desc">Analyse d'images et détection d'objets en temps réel via
+                            des modèles d'IA avancés.</p>
+                    </div>
+                </div>
+
+                <!-- Medical u Imaging -->
+                <div class="dev-item animate-on-scroll" data-delay="200">
+                    <div class="dev-badge">MedTech</div>
+                    <div class="dev-img-container">
+                        <img src="https://images.unsplash.com/photo-1530210124550-912dc1381cb8?auto=format&fit=crop&q=80&w=800"
+                            alt="Medical Imaging">
+                    </div>
+                    <div class="dev-content">
+                        <h3 data-i18n="dev_medical_imaging">Imagerie Médicale</h3>
+                        <p data-i18n="dev_medical_imaging_desc">Optimisation du diagnostic médical par l'analyse
+                            automatisée de scans et radiographies.</p>
+                    </div>
+                </div>
+
+                <!-- Multi-agent Systems -->
+                <div class="dev-item animate-on-scroll" data-delay="300">
+                    <div class="dev-badge">Systems</div>
+                    <div class="dev-img-container">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800"
+                            alt="Multi-Agent Systems">
+                    </div>
+                    <div class="dev-content">
+                        <h3 data-i18n="dev_multi_agent">Systèmes Multi-Agents</h3>
+                        <p data-i18n="dev_multi_agent_desc">Étude des interactions et de la collaboration entre agents
+                            intelligents autonomes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="cta-section" style="padding: 80px 0;">
+        <div class="container">
+            <h2 class="pulse" data-i18n="contact_title">Prêt à collaborer ?</h2>
+            <p data-i18n="contact_desc" style="margin-bottom: 40px;">N'hésitez pas à me contacter pour toute opportunité
+                professionnelle.</p>
+
+            <div class="contact-wrapper"
+                style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px; text-align: left; align-items: start;">
+                <div class="contact-info-v2">
+                    <h3 style="color: white; margin-bottom: 25px; font-size: 1.8em;" data-i18n="contact_info_title">Mes
+                        Coordonnées</h3>
+                    <div style="display: flex; flex-direction: column; gap: 20px;">
+                        <a href="mailto:fofackhenri36@gmail.com" class="contact-item-v2"
+                            style="display: flex; align-items: center; gap: 15px; color: white; text-decoration: none; font-size: 1.1em;">
+                            <span
+                                style="width: 45px; height: 45px; background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; border-radius: 50%;"><i
+                                    class="fas fa-envelope"></i></span>
+                            fofackhenri36@gmail.com
+                        </a>
+                        <a href="tel:+237674567192" class="contact-item-v2"
+                            style="display: flex; align-items: center; gap: 15px; color: white; text-decoration: none; font-size: 1.1em;">
+                            <span
+                                style="width: 45px; height: 45px; background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; border-radius: 50%;"><i
+                                    class="fas fa-phone"></i></span>
+                            +237 674 56 71 92
+                        </a>
+                        <div class="social-links-v2" style="display: flex; gap: 15px; margin-top: 20px;">
+                            <a href="https://linkedin.com/in/henri-fofack-250b1b320" target="_blank"
+                                style="width: 45px; height: 45px; background: white; color: var(--primary-color); display: flex; align-items: center; justify-content: center; border-radius: 50%; font-size: 1.2em; transition: all 0.3s;"><i
+                                    class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/ALEMDJOU" target="_blank"
+                                style="width: 45px; height: 45px; background: white; color: var(--primary-color); display: flex; align-items: center; justify-content: center; border-radius: 50%; font-size: 1.2em; transition: all 0.3s;"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form id="contactForm" action="https://formspree.io/f/mjgakkzw" method="POST" class="modern-form">
+                        <div class="form-row"
+                            style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required placeholder=" " class="form-input">
+                                <label for="name" data-i18n="form_name">Nom Complet</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="_replyto" required placeholder=" "
+                                    class="form-input">
+                                <label for="email" data-i18n="form_email">Email</label>
+                            </div>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 20px;">
+                            <input type="text" id="subject" name="subject" required placeholder=" " class="form-input">
+                            <label for="subject" data-i18n="form_subject">Objet</label>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 30px;">
+                            <textarea id="message" name="message" required placeholder=" " class="form-input"
+                                style="min-height: 120px; resize: vertical;"></textarea>
+                            <label for="message" data-i18n="form_message">Votre Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large"
+                            style="width: 100%; background: var(--background-dark); border: 2px solid white;"
+                            data-i18n="form_submit">
+                            Envoyer le message <i class="fas fa-paper-plane" style="margin-left: 10px;"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 20px;">
+                <a href="index.html"><img src="images/logo.png" alt="Logo FAHJ" style="height: 100px; width: auto;"></a>
+            </div>
+            <div class="footer-bottom" style="text-align:center;">
+                <p>&copy; 2026 Fofack Alemdjou Henri Joel. <span data-i18n="footer_rights">Tous droits réservés.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/translations.js"></script>
+</body>
+
+</html>

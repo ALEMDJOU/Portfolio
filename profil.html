@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="profil_page_title">Mon Profil - Fofack Alemdjou Henri Joel</title>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body style="background-color: var(--background-light);">
+    <header class="navbar" style="background-color: var(--background-dark); padding: 5px 0;">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Logo FAHJ" style="height: 40px; width: auto;"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="profil.html" data-i18n="nav_about">À propos</a></li>
+                    <li><a href="index.html#projects" data-i18n="nav_projects">Projets</a></li>
+                    <li><a href="index.html#contact" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons" style="display:flex; align-items:center;">
+                <div class="lang-dropdown">
+                    <button class="lang-btn" id="current-lang"><img src="https://flagcdn.com/w20/fr.png" alt="FR"
+                            width="20" style="margin-right:5px;"> FR ▼</button>
+                    <div class="lang-content">
+                        <button onclick="changeLang('fr')"><img src="https://flagcdn.com/w20/fr.png" alt="FR" width="20"
+                                style="margin-right:10px;"> Français</button>
+                        <button onclick="changeLang('en')"><img src="https://flagcdn.com/w20/gb.png" alt="EN" width="20"
+                                style="margin-right:10px;"> English</button>
+                        <button onclick="changeLang('de')"><img src="https://flagcdn.com/w20/de.png" alt="DE" width="20"
+                                style="margin-right:10px;"> Deutsch</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="profil" class="features-section" style="padding-top: 100px;">
+        <div class="container">
+            <h2 class="section-title" data-i18n="profil_title">À Propos de Moi</h2>
+
+            <div class="profile-container animate-on-scroll" data-delay="0">
+                <img src="images/fofack.webp" alt="Photo de profil" class="profile-img">
+                <div class="profile-text">
+                    <p data-i18n="profil_desc">Étudiant ingénieur en Génie Informatique à l'ENSPY,
+                        passionné par la Data Science, le Machine Learning et le Deep Learning. Solides bases théoriques
+                        en apprentissage automatique et en réseaux de neurones, que je m'efforce chaque jour de traduire
+                        en compétences pratiques concrètes. Maîtrise des outils fondamentaux (Python, Pandas,
+                        Scikit-learn) et expérience acquise sur plusieurs projets fullstack en équipe. Je cherche à
+                        contribuer à des projets à fort impact technique et humain.</p>
+                    <div style="margin-top: 20px;">
+                        <a href="https://github.com/ALEMDJOU" target="_blank" class="btn btn-primary"
+                            style="display: inline-flex; align-items: center; gap: 10px;">
+                            <i class="fab fa-github" style="font-size: 1.2em;"></i>
+                            <span data-i18n="profil_github">Mon profil GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center;">
+                <a href="index.html" class="btn btn-secondary back-btn" data-i18n="btn_back">Retour à l'accueil</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 20px;">
+                <a href="index.html"><img src="images/logo.png" alt="Logo FAHJ" style="height: 100px; width: auto;"></a>
+            </div>
+            <div class="footer-bottom" style="text-align:center;">
+                <p>&copy; 2026 Fofack Alemdjou Henri Joel. <span data-i18n="footer_rights">Tous droits réservés.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/translations.js"></script>
+</body>
+
+</html>
